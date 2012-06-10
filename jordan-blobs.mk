@@ -16,10 +16,6 @@ device_path = device/motorola/jordan_plus
 
 DEVICE_PREBUILT := ${device_path}/prebuilt
 
-# Temporary cm9 bootanimation
-PRODUCT_COPY_FILES += \
-	$(DEVICE_PREBUILT)/bootanimation.zip:system/media/bootanimation.zip
-
 PRODUCT_COPY_FILES += \
 	$(DEVICE_PREBUILT)/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
 	$(DEVICE_PREBUILT)/etc/terminfo/x/xterm:system/etc/terminfo/x/xterm \
@@ -46,10 +42,10 @@ PRODUCT_COPY_FILES += \
 	${device_path}/media_profiles.xml:system/etc/media_profiles.xml \
 	${device_path}/modules/modules.alias:system/lib/modules/modules.alias \
 	${device_path}/modules/modules.dep:system/lib/modules/modules.dep \
-	$(DEVICE_PREBUILT)/etc/init.d/00baseband:system/etc/init.d/00baseband \
 	$(DEVICE_PREBUILT)/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-	$(DEVICE_PREBUILT)/etc/init.d/02ipv6:system/etc/init.d/02ipv6 \
+	$(DEVICE_PREBUILT)/etc/init.d/02baseband:system/etc/init.d/02baseband \
 	$(DEVICE_PREBUILT)/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+	$(DEVICE_PREBUILT)/etc/init.d/04filesystems:system/etc/init.d/04filesystems \
 	$(DEVICE_PREBUILT)/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
 	$(DEVICE_PREBUILT)/etc/init.d/07camera:system/etc/init.d/07camera \
 	$(DEVICE_PREBUILT)/etc/init.d/08backlight:system/etc/init.d/08backlight \
