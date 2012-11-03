@@ -7,7 +7,7 @@
 echo "JORDAN+ SQUISHER:"
 echo "================"
 
-DEVICE_OUT=$ANDROID_BUILD_TOP/out/target/product/jordan_plus
+DEVICE_OUT=$OUT
 DEVICE_TOP=$ANDROID_BUILD_TOP/device/motorola/jordan_plus
 DEVICE_COMMON=$ANDROID_BUILD_TOP/device/motorola/jordan-common
 VENDOR_TOP=$ANDROID_BUILD_TOP/vendor/motorola/jordan_plus
@@ -194,7 +194,7 @@ echo
 printf "Signing package..."
 SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
 java -Xmx768m \
-	-jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar \
+	-jar $ANDROID_HOST_OUT/framework/signapk.jar \
 	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
 	$REPACK/update.zip $OUTFILE
 echo
