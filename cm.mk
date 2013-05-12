@@ -18,14 +18,14 @@ TARGET_BOOTANIMATION_NAME := 480
 
 $(call inherit-product-if-exists, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/cm/config/gsm.mk)
-$(call inherit-product, device/moto/mb526/full_jordan.mk)
+$(call inherit-product, device/motorola/mb52x/full_jordan.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/moto/mb526/overlay
+DEVICE_PACKAGE_OVERLAYS += device/motorola/mb52x/overlay
 
-PRODUCT_NAME := cm_mb526
+PRODUCT_NAME := cm_mb52x
 PRODUCT_BRAND := motorola
-PRODUCT_DEVICE := mb526
-PRODUCT_MODEL := MB526
+PRODUCT_DEVICE := mb52x
+PRODUCT_MODEL := MB52x
 PRODUCT_MANUFACTURER := MOTO
 PRODUCT_RELEASE_NAME := Motorola Defy+
 PRODUCT_SFX := umts
