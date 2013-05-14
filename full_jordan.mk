@@ -22,10 +22,10 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/motorola/mb52x/jordan.mk)
+$(call inherit-product, device/moto/mb526/jordan.mk)
 
-PRODUCT_NAME := full_mb52x
-PRODUCT_DEVICE := mb52x
+PRODUCT_NAME := full_mb526
+PRODUCT_DEVICE := mb526
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := MB52x
+PRODUCT_MODEL := MB526
 PRODUCT_MANUFACTURER := motorola
