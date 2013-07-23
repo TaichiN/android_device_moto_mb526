@@ -20,5 +20,7 @@ persist.sys.charge_led=white
 persist.sys.button_brightness=100
 # use default multitouch configuration
 persist.sys.multitouch=2
+# Disable those GC freed lines
+dalvik.vm.debug.alloc=0
 #=========================================================================================
 
